@@ -21,7 +21,7 @@ describe("Fund Me", function () {
   describe("fund", function () {
     it("Fail if you don't send enough ETH", async function () {
       await expect(fundMe.fund()).to.be.revertedWith(
-        "you need to spend more ETH!"
+        "You need to spend more ETH!"
       );
     });
 
